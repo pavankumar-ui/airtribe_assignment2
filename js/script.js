@@ -53,7 +53,7 @@ const questions = [
 ];
 
 
-const QuesElement = document.getElementById('question');
+const quesElement = document.getElementById('question');
 const AnswerList = document.getElementById('answer-list');
 const submitButton = document.getElementById('submit');
 const nextButton = document.getElementById('next');
@@ -66,7 +66,7 @@ function loadQuestion() {
     //take an empty Question by it's index
     const Question = questions[QuesItem];
     //append the empty index to the question//
-    QuesElement.append(Question.text);
+    quesElement.append(Question.text);
 
     AnswerList.innerHTML = "";
 
@@ -120,7 +120,7 @@ nextButton.addEventListener("click", () => {
     //Basic DOM manipulation methods are required here.
 
     //clear the previous question which rerenders here//
-    QuesElement.innerHTML = "";
+    quesElement.innerHTML = "";
     //increment the question array by one//
     QuesItem++;
 
